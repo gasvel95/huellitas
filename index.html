@@ -94,3 +94,292 @@
       line-height: .98;
       letter-spacing: -.055em;
     }
+
+    .lead {
+      max-width: 720px;
+      margin: 1.5rem 0 0;
+      color: #dcece6;
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    }
+
+    .updated {
+      display: inline-flex;
+      margin-top: 1.75rem;
+      padding: .5rem .85rem;
+      color: var(--ink);
+      background: var(--mint);
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 3rem;
+      padding: 3.5rem 1.25rem 5rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 1.25rem;
+      align-self: start;
+      padding: 1.25rem;
+      background: rgba(255, 255, 255, .82);
+      border: 1px solid var(--line);
+      border-radius: 1.25rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 35px rgba(32, 53, 47, .08);
+    }
+
+    nav strong { display: block; margin-bottom: .75rem; }
+    nav a { display: block; padding: .38rem 0; text-decoration: none; font-size: .94rem; }
+
+    main { min-width: 0; }
+
+    section {
+      scroll-margin-top: 1.5rem;
+      margin-bottom: 3.25rem;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+    }
+
+    h3 { margin: 1.75rem 0 .45rem; font-size: 1.12rem; }
+    p { margin: .65rem 0; }
+    ul { padding-left: 1.25rem; }
+    li + li { margin-top: .6rem; }
+
+    .notice,
+    .card {
+      padding: 1.35rem 1.45rem;
+      border-radius: 1.25rem;
+    }
+
+    .notice {
+      margin: 0 0 3rem;
+      background: var(--mint);
+      border-left: .4rem solid var(--teal);
+    }
+
+    .notice strong { display: block; margin-bottom: .35rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 24px rgba(32, 53, 47, .06);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .accent-card {
+      background: var(--orange-soft);
+      border-color: #f7bea7;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: .65rem;
+      padding: .2rem .55rem;
+      color: var(--teal);
+      background: var(--mint);
+      border-radius: 999px;
+      font-size: .76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .contact-box {
+      padding: 1.4rem;
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 1.25rem;
+    }
+
+    .contact-box a { color: #bde9dd; }
+
+    footer {
+      padding: 0 1.25rem 3rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 800px) {
+      .hero { padding-top: 3rem; }
+      .layout { grid-template-columns: 1fr; gap: 2rem; }
+      nav { position: static; }
+      nav a { display: inline-block; margin-right: 1rem; }
+      .cards { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">🐾</span> Huellitas</div>
+      <h1>Política de privacidad</h1>
+      <p class="lead">Cómo cuidamos la información utilizada para publicar, encontrar y ayudar a reunir mascotas con sus familias.</p>
+      <span class="updated">Última actualización: 19 de agosto de 2026</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav aria-label="Contenido de la política">
+      <strong>En esta página</strong>
+      <a href="#alcance">Alcance</a>
+      <a href="#datos">Datos utilizados</a>
+      <a href="#publicaciones">Fotos y publicaciones</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#anuncios">Anuncios</a>
+      <a href="#proveedores">Proveedores</a>
+      <a href="#conservacion">Conservación y eliminación</a>
+      <a href="#derechos">Tus opciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+      <aside class="notice">
+        <strong>Resumen claro</strong>
+        Huellitas no vende fotos ni información personal, ni entrega esos datos a anunciantes. Sin embargo, la foto, ubicación aproximada y datos de contacto que una persona decide incluir en un aviso se muestran a otros usuarios porque son necesarios para localizar o identificar a la mascota.
+      </aside>
+
+      <section id="alcance">
+        <span class="tag">01 · Alcance</span>
+        <h2>Sobre esta política</h2>
+        <p>Esta política se aplica a la aplicación móvil <strong>Huellitas</strong>, identificada como <code>com.oddloop.huellitas</code>. Huellitas es una herramienta comunitaria sin fines de lucro destinada a publicar avisos de mascotas perdidas o encontradas.</p>
+        <p>No es necesario crear una cuenta con correo electrónico ni establecer una contraseña. La aplicación utiliza autenticación anónima para asignar un identificador técnico a cada instalación y permitir que quien publicó un aviso pueda administrarlo.</p>
+      </section>
+
+      <section id="datos">
+        <span class="tag">02 · Datos</span>
+        <h2>Qué información utiliza Huellitas</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Datos del aviso</h3>
+            <p>Tipo de aviso, especie, nombre o referencia, descripción, zona o dirección aproximada, coordenadas del marcador, fecha y estado del aviso.</p>
+          </article>
+          <article class="card">
+            <h3>Foto opcional</h3>
+            <p>La imagen elegida desde el dispositivo se carga únicamente cuando la persona decide publicarla para facilitar la identificación de la mascota.</p>
+          </article>
+          <article class="card">
+            <h3>Datos de contacto</h3>
+            <p>El nombre y teléfono, WhatsApp o correo que la persona proporciona voluntariamente para que otras personas puedan comunicarse sobre el aviso.</p>
+          </article>
+          <article class="card">
+            <h3>Datos técnicos</h3>
+            <p>Identificador anónimo de Firebase, datos necesarios para sincronizar avisos y reportes, y datos técnicos procesados por los servicios de anuncios descritos más abajo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publicaciones">
+        <span class="tag">03 · Publicaciones</span>
+        <h2>Fotos e información personal</h2>
+        <p><strong>Huellitas no vende, alquila ni comparte por iniciativa propia las fotos subidas o los datos personales con empresas, anunciantes o intermediarios de datos.</strong> Tampoco utiliza el contenido de los avisos para crear perfiles publicitarios.</p>
+        <p>Al publicar un aviso, la persona solicita que su contenido sea visible dentro de la aplicación. Por ese motivo, otros usuarios pueden ver la foto, descripción, ubicación aproximada y dato de contacto incorporados al aviso. La función “Compartir publicación” también permite que un usuario envíe voluntariamente esos datos mediante otras aplicaciones instaladas en su dispositivo.</p>
+        <p>Las fotos y datos se procesan mediante Firebase para almacenarlos y mostrarlos en la aplicación. Este procesamiento técnico no significa que Huellitas autorice su utilización para publicidad u otros fines ajenos al aviso.</p>
+      </section>
+
+      <section id="ubicacion">
+        <span class="tag">04 · Ubicación</span>
+        <h2>Uso de la ubicación</h2>
+        <p>Huellitas solicita acceso a ubicación precisa o aproximada solamente cuando la persona usa funciones como “Mi ubicación” o “Usar mi ubicación actual”. No utiliza la ubicación en segundo plano.</p>
+        <p>La ubicación seleccionada para un aviso se publica como referencia geográfica para ayudar en la búsqueda. Antes de publicar, la persona puede escribir una zona, buscar una dirección o seleccionar otro punto del mapa.</p>
+      </section>
+
+      <section id="anuncios">
+        <span class="tag">05 · AdMob</span>
+        <h2>Anuncios y datos publicitarios</h2>
+        <div class="card accent-card">
+          <h3>Los anuncios ayudan a solventar el mantenimiento</h3>
+          <p>Huellitas muestra banners proporcionados por <strong>Google AdMob</strong>. Los ingresos se destinan a cubrir gastos operativos y de mantenimiento de la aplicación.</p>
+        </div>
+        <p>El SDK de Google Mobile Ads puede procesar identificadores del dispositivo o publicitarios, dirección IP, información general del dispositivo, diagnósticos y eventos relacionados con solicitudes, impresiones o clics en anuncios. Google puede utilizar esta información para mostrar anuncios, medir su rendimiento, limitar abusos y prevenir fraude, de acuerdo con su propia política y la configuración de consentimiento aplicable.</p>
+        <p><strong>AdMob no recibe desde el código de Huellitas las fotos, descripciones, ubicaciones publicadas ni datos de contacto de los avisos.</strong> Huellitas no combina el contenido de los avisos con la información publicitaria.</p>
+        <p>La personalización de anuncios puede depender de la región, las preferencias del dispositivo, la configuración de Google y el consentimiento requerido. Las personas pueden gestionar preferencias mediante los controles incluidos en los anuncios o en su cuenta de Google.</p>
+      </section>
+
+      <section id="proveedores">
+        <span class="tag">06 · Servicios</span>
+        <h2>Proveedores que procesan información</h2>
+        <ul>
+          <li><strong>Firebase Authentication:</strong> crea un identificador anónimo para operar sin registro tradicional.</li>
+          <li><strong>Cloud Firestore:</strong> almacena y sincroniza avisos y reportes.</li>
+          <li><strong>Firebase Storage:</strong> almacena las fotos que se adjuntan a los avisos.</li>
+          <li><strong>Google AdMob:</strong> suministra y mide los anuncios mostrados en la aplicación.</li>
+          <li><strong>OpenStreetMap y servicios de geocodificación del dispositivo:</strong> permiten mostrar mapas y convertir referencias geográficas en direcciones o coordenadas.</li>
+        </ul>
+        <p>Estos proveedores pueden procesar datos en infraestructura ubicada fuera del país de residencia de la persona usuaria y aplican sus propias condiciones y medidas de seguridad.</p>
+        <p>
+          Más información:
+          <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Privacidad de Firebase</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Política de privacidad de Google</a> y
+          <a href="https://support.google.com/admob/answer/9755157?hl=es" rel="noopener noreferrer">eventos procesados por Google Mobile Ads</a>.
+        </p>
+      </section>
+
+      <section id="conservacion">
+        <span class="tag">07 · Conservación</span>
+        <h2>Conservación, reportes y eliminación</h2>
+        <p>Los avisos se conservan mientras sean necesarios para prestar el servicio o hasta que quien los publicó los elimine. Al eliminar un aviso desde la misma instalación que lo creó, Huellitas elimina el registro y solicita la eliminación de su foto asociada.</p>
+        <p>Los avisos marcados como resueltos pueden conservarse durante un período razonable para mantener la integridad del servicio. Los reportes incluyen un motivo y una fecha, se asocian a un identificador anónimo y se utilizan exclusivamente para moderación, seguridad y prevención de abuso.</p>
+        <p>También podemos conservar información cuando sea razonablemente necesario para cumplir obligaciones legales, resolver disputas, investigar abusos o proteger la seguridad de la comunidad.</p>
+      </section>
+
+      <section id="derechos">
+        <span class="tag">08 · Control</span>
+        <h2>Tus opciones y derechos</h2>
+        <ul>
+          <li>La foto es opcional y solo se abre el selector de imágenes cuando la persona lo solicita.</li>
+          <li>El permiso de ubicación puede rechazarse o revocarse desde los ajustes de Android.</li>
+          <li>Quien creó un aviso puede marcarlo como resuelto o eliminarlo desde la instalación que conserva su identificador anónimo.</li>
+          <li>Se puede solicitar acceso, corrección o eliminación de información mediante el canal de contacto indicado abajo.</li>
+          <li>Las preferencias publicitarias pueden gestionarse desde los controles de Google y del dispositivo.</li>
+        </ul>
+      </section>
+
+      <section id="seguridad">
+        <span class="tag">09 · Seguridad</span>
+        <h2>Cómo protegemos la información</h2>
+        <p>La aplicación utiliza conexiones cifradas y reglas de acceso de Firebase. Limitamos la información solicitada a la necesaria para publicar y administrar avisos. Aun así, ningún sistema conectado a Internet puede garantizar seguridad absoluta.</p>
+        <p>Recomendamos no publicar información sensible que no sea necesaria para localizar a la mascota y utilizar una referencia geográfica aproximada cuando resulte suficiente.</p>
+      </section>
+
+      <section id="cambios">
+        <span class="tag">10 · Cambios</span>
+        <h2>Cambios en esta política</h2>
+        <p>Esta política puede actualizarse cuando cambien las funciones de Huellitas, los proveedores utilizados o los requisitos aplicables. La fecha de la última actualización siempre aparecerá al comienzo de esta página.</p>
+      </section>
+
+      <section id="contacto">
+        <div class="contact-box">
+          <h2>Consultas de privacidad</h2>
+          <p>Responsable de la aplicación: <strong>Oddloop — Huellitas</strong>.</p>
+          <p>Para solicitar acceso, corrección o eliminación de datos, utilizá el correo de contacto del desarrollador publicado en la <a href="https://play.google.com/store/apps/details?id=com.oddloop.huellitas" rel="noopener noreferrer">ficha oficial de Huellitas en Google Play</a>. Incluí los datos suficientes para identificar el aviso, pero no envíes contraseñas ni información innecesaria.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 Huellitas · Aplicación comunitaria sin fines de lucro.
+  </footer>
+</body>
+</html>
